@@ -1,0 +1,45 @@
+
+mat-card {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 20px;
+  
+    /* Box Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+  }
+
+  mat-form-field {
+     margin-top: 10px;
+  }
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 20px; /* Add space between the form fields and the button */
+    background-color: brown;
+    color: azure!important;
+  }
+  .existing_user{
+       text-align: center;
+       padding: 20px;
+       font-weight: 500;
+       font-size: medium;
+       color: green;
+  }
+
+  .text-muted {
+    color: #ff0000; /* Red color for error messages */
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
