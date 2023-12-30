@@ -1,0 +1,63 @@
+/* Add this to your global styles or component-specific styles */
+mat-card {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 20px; /* Add padding to the card for better spacing */
+  
+    /* Box Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  button {
+    width: 100%;
+    margin-top: 20px; /* Add space between the form fields and the button */
+    background-color: brown;
+    color: azure;
+  }
+  
+
+  mat-form-field {
+    border-radius: 4px; /* Add rounded corners to form fields */
+  }
+  
+  ::ng-deep .mdc-button .mdc-button__label {
+    position: relative;
+    color: white;
+}
+
+::ng-deep .mat-mdc-raised-button .mat-mdc-button-touch-target,
+.mat-mdc-outlined-button .mat-mdc-button-touch-target {
+    position: absolute;
+    top: 50%;
+    height: 48px;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: brown !important;
+    color: white;
+}
+
+.text-muted {
+    color: #ff0000; /* Red color for error messages */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.not_register_yet{
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+  font-size: medium;
+  color: green;
+}
+
+.forget_password{
+  font-size: medium;
+  color:blue;
+  cursor: pointer;
+}

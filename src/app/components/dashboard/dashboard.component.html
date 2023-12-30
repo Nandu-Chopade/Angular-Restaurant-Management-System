@@ -1,0 +1,19 @@
+<!-- Your HTML template -->
+<div class="card-container">
+  <div *ngFor="let card of cardData">
+    <mat-card class="mycard">
+      <mat-card-header>
+        <mat-card-title class="title">{{ card.title }}</mat-card-title>
+        <!-- <mat-card-subtitle>{{ card.subtitle }}</mat-card-subtitle> -->
+      </mat-card-header>
+      <img mat-card-image [src]="card.image" alt="{{ card.alt }}">
+      <mat-card-content>
+        <p>{{ card.content }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button routerLink="{{card.link}}" *ngFor="let button of card.buttons">{{ button }}</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <!-- Add more cards as needed -->
+</div>

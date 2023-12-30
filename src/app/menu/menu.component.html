@@ -1,0 +1,22 @@
+<div class="menu">
+  <div class="heading">
+    <h3>Discover</h3>
+    <h1>Our Menu</h1>
+    <p>Breakfast | Lunch | Dinner</p>
+    <div class="menu-list" fxLayout="row" fxLayoutGap="20px">
+      <mat-card *ngFor="let item of menuItems" class="menu-card">
+        <mat-card-content class="menus">
+          <div class="img"><img [src]="item.image" /></div>
+          <div class="info">
+            <mat-card-title>{{ item.name }}</mat-card-title>
+            <b
+              >Price: ${{ item.price }}
+              <!-- <button mat-raised-button class="buy-now">Buy Now</button> -->
+            </b>
+            <div>{{ item.description }}</div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+
+.demo-chart {
+    margin-top: 30px;
+    padding: 30px !important;
+}
+
+.mat-container{
+ padding: 20px;
+ margin-top: 10px;
+ width: 60%;
+ height: 50%;
+}
+
+.flex-row-container{
+    display: flex;
+    justify-content: center;
+}
+
+.row-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.button-groups button.active {
+    background-color: brown;
+    color: #ffffff; 
+  }
+  
+
+.btn {
+    background: linear-gradient(to right,brown, #FF416C, #FF4B2B);
+    color: white;
+    padding: .75rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    /* font-weight: bold; */
+    /* font-size: 1.2rem; */
+    margin: 13px; 
+    /* width: 173px; */
+}
+
+.btn-intermediate {
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 10px; */
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-intermediate:hover {
+    transform: scale(1.1);
+}
+
+
+@media only screen and (min-width: 412px) and (max-width: 915px) {
+
+    .flex-row-container{
+        display: none;
+    }
+
+    .mat-container-md{
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .button-groups-flex-md{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn{
+        flex: 1 0 92%;
+    }
+}

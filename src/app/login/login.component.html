@@ -1,0 +1,30 @@
+<mat-card class="login-card">
+    <h1 style="text-align: center;">Login</h1>
+    <form [formGroup]="loginForm">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Username or email" formControlName="email" />
+            <mat-icon matSuffix>account_circle</mat-icon>
+        </mat-form-field>
+        <span class="text-muted" *ngIf="!loginForm.controls['email'].valid && loginForm.controls['email']?.touched">
+            Please enter a valid Email
+        </span>
+
+        <mat-form-field appearance="outline">
+            <mat-icon matSuffix>password</mat-icon>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Password" formControlName="password" />
+        </mat-form-field>
+        <span class="text-muted"
+            *ngIf="!loginForm.controls['password'].valid && loginForm.controls['password']?.touched">
+            Please enter a valid Password
+        </span>
+        <div class="forget_password" routerLink="/forget-password" > forget password?
+         </div>
+        <button [disabled]="!loginForm.valid" mat-raised-button mat-button>Sign In</button>
+        <div class="not_register_yet">
+           Not Register Yet ? <a routerLink="/register" > Register Here </a> 
+        </div>
+    </form>
+</mat-card>

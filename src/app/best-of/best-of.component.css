@@ -1,0 +1,81 @@
+mat-form-field{
+    display: inline-flex;
+    align-items: center;
+    margin: 15px;
+    border-radius: 5px;
+    /* width: 20%; */
+}
+
+.filterCover {
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-mexican-food_23-2148140224.jpg?w=1060&t=st=1702784373~exp=1702784973~hmac=7fb7ddc6b59717182af452fdfaef997f334f74c2a733a69885d473cc9a48c81e');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 20px;
+    
+}
+.filterCover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+button{
+    height: 50px;
+    width: auto;
+    margin: 15px;
+    padding: 25px;
+    background-color:brown;
+    color: white;
+    border: 0cap;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+  
+img{
+    height: 300px;
+    width: 380px;
+}
+
+.row{
+    display: flex;
+}
+.dishes{
+    margin: 5px;
+}
+
+.services{
+    margin: 10px;
+}
+
+.dish-services-section{
+    padding-bottom: 120px;
+    padding-top: 30px;
+
+}
+
+section{
+    display: block;
+    align-items: center;
+    margin-left: 100px;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+.filter{
+    margin-left: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,87 @@
+.example-container {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.example-sidenav-content {
+  display:block;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.example-sidenav {
+   user-select: none;
+   z-index: 2;
+}
+
+.full-width {
+  width: 100%;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.menu-button {
+  transition: 300ms ease-in-out;
+  transform: rotate(0deg);
+}
+.menu-button.rotated {
+  transform: rotate(180deg);
+}
+.submenu {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+  padding-left: 30px;
+}
+.submenu.expanded {
+  transform: scaleY(1);
+}
+
+.icon{
+  margin-bottom: -5px;
+  margin-left: 10px;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+mat-list-item{
+  height:auto !important;
+  padding:5px;
+  border-radius: 30px;
+  transition: background 300ms ease, color 300ms ease;
+}
+
+mat-list-item:hover{
+  height:auto !important;
+  padding:5px;
+  background: #f2eeee;
+  border-radius: 30px;
+}
+
+.login-button{
+  width: 100px;
+  font-size: large;
+}
+.example-sidenav {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+.example-sidenav.collapsed {
+  width: 65px;
+}
+
+
+@media only screen and (min-width: 412px) and (max-width: 915px) {
+
+  .example-sidenav{
+    position: relative;
+    height: 100%;
+    width: 300px;
+    z-index:-1;
+  }
+  
+}

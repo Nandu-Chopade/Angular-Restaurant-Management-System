@@ -1,0 +1,29 @@
+
+<div class="flex-row-container">
+  <mat-card class="mat-container">
+    <div echarts [options]="options" [theme]="theme" class="demo-chart"></div>
+  <div class="row-container">
+    <div class="button-groups">
+      <button mat-button class="btn btn-intermediate" (click)="setTheme(undefined)" [ngClass]="{ 'active': !theme }" nz-button nzType="default">Default</button>
+      <button mat-button class="btn btn-intermediate" (click)="setTheme('dark')" [ngClass]="{ 'active': theme === 'dark' }" nz-button nzType="default">Dark</button>
+      <button mat-button class="btn btn-intermediate" (click)="setTheme('macarons')" [ngClass]="{ 'active': theme === 'macarons' }" nz-button nzType="default">Macarons</button>
+      <button mat-button class="btn btn-intermediate" (click)="setTheme(coolTheme)" [ngClass]="{ 'active': theme === coolTheme }" nz-button nzType="default">Cool</button>
+    </div>
+  </div>
+  </mat-card>
+</div>
+
+
+
+  <mat-card class="mat-container-md">
+    <div echarts [options]="options" [theme]="theme" class="demo-chart"></div>
+    <div class="button-groups-flex-md">
+      <button mat-button class="btn" (click)="setTheme(undefined)" [ngClass]="{ 'active': !theme }" nz-button nzType="default">Default</button>
+      <button mat-button class="btn" (click)="setTheme('dark')" [ngClass]="{ 'active': theme === 'dark' }" nz-button nzType="default">Dark</button>
+      <button mat-button class="btn" (click)="setTheme('macarons')" [ngClass]="{ 'active': theme === 'macarons' }" nz-button nzType="default">Macarons</button>
+      <button mat-button class="btn" (click)="setTheme(coolTheme)" [ngClass]="{ 'active': theme === coolTheme }" nz-button nzType="default">Cool</button>
+    </div>
+  </mat-card>
+
+  
+

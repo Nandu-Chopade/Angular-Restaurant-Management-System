@@ -1,0 +1,151 @@
+
+<div class="filterCover">
+    <div class="filter">
+        <mat-form-field>
+            <mat-label>Search Dishes</mat-label>
+            <mat-select [formControl]="custonDropdown" (closed)="onPanelClose()">
+
+                <mat-form-field>
+                    <input matInput [formControl]="filterControl" type="text" name="filter-options" id="filter-options"
+                        placeholder="Search">
+                </mat-form-field>
+
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option.name"
+                    [ngClass]="{'hide': !option.show}">
+                    {{option.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Category</mat-label>
+            <mat-select [formControl]="custonDropdown" (closed)="onPanelClose()">
+
+                <mat-form-field>
+                    <input matInput [formControl]="filterControl" type="text" name="filter-options" id="filter-options"
+                        placeholder="Search">
+                </mat-form-field>
+
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option.name"
+                    [ngClass]="{'hide': !option.show}">
+                    {{option.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Tags</mat-label>
+            <mat-select [formControl]="custonDropdown" (closed)="onPanelClose()">
+
+                <mat-form-field>
+                    <input matInput [formControl]="filterControl" type="text" name="filter-options" id="filter-options"
+                        placeholder="Search">
+                </mat-form-field>
+
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option.name"
+                    [ngClass]="{'hide': !option.show}">
+                    {{option.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button>Search</button>
+    </div>
+</div>
+
+<section class="dish-services-section">
+    <div class="bestOfDisplay">
+        <h1>Best dishes</h1><br>
+        <div class="row">
+            <div class="dishes">
+                <a href="#">
+                    <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/02/01171428/YFL-Pav-Bhaji-3.jpg"
+                        alt="Photo of Pav bhaji">
+                </a>
+                <div class="text">
+                    <h2>Pav bhaji</h2>
+                </div>
+            </div>
+            <div class="dishes">
+                <a href="#">
+                    <img src="https://slurrp.club/wp-content/uploads/2021/10/DSC_0037-2.jpg" alt="Photo of Biryani">
+                </a>
+                <div class="text">
+                    <h2>Biryani</h2>
+                </div>
+            </div>
+            <div class="dishes">
+                <a href="#">
+                    <img src="https://www.livingsmartandhealthy.com/wp-content/uploads/2023/06/paneer-butter-masala-recipe.jpg"
+                        alt="Photo of panner tikka">
+                </a>
+                <div class="text">
+                    <h2>Panner tikka masala</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="dishes">
+                <a href="#">
+                    <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/02/01171428/YFL-Pav-Bhaji-3.jpg"
+                        alt="Photo of Pav bhaji">
+                </a>
+                <div class="text">
+                    <h2>Pav bhaji</h2>
+                </div>
+            </div>
+            <div class="dishes">
+                <a href="#">
+                    <img src="https://slurrp.club/wp-content/uploads/2021/10/DSC_0037-2.jpg" alt="Photo of Biryani">
+                </a>
+                <div class="text">
+                    <h2>Biryani</h2>
+                </div>
+            </div>
+            <div class="dishes">
+                <a href="#">
+                    <img src="https://www.livingsmartandhealthy.com/wp-content/uploads/2023/06/paneer-butter-masala-recipe.jpg"
+                        alt="Photo of panner tikka">
+                </a>
+                <div class="text">
+                    <h2>Panner tikka masala</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <h1>Services</h1><br>
+    <div class="row">
+        <div class="services">
+            <a href="#">
+                <img src="https://berryberrysweet.com/wp-content/uploads/2018/10/Printable-Welcome-Bag-Card-Wedding-Welcome-Cards-and-Wedding-Itinerary-Cards-Modern-Script-1.jpg"
+                    alt="">
+            </a>
+            <div class="text">
+                <h2>Personalized Greetings</h2>
+            </div>
+        </div>
+
+        <div class="services">
+            <a href="#">
+                <img src="https://image.made-in-china.com/2f0j00otCUvVenLmqD/Customize-Wooden-Hotel-Dining-Table-and-Chair-Furniture-Sets.webp"
+                    alt="">
+            </a>
+            <div class="text">
+                <h2>Customized Dining Tables</h2>
+            </div>
+        </div>
+
+        <div class="services">
+            <a href="#">
+                <img src="https://restaurant.eatapp.co/hs-fs/hubfs/res4.webp?width=1173&height=659&name=res4.webp"
+                    alt="">
+            </a>
+            <div class="text">
+                <h2>Seasonal Experiences</h2>
+            </div>
+        </div>
+    </div>
+
+</section>

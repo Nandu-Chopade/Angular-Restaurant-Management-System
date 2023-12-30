@@ -1,0 +1,26 @@
+img{
+    height: 300px;
+    width: 450px;
+}
+
+.row{
+    display: flex;
+}
+.events{
+    margin: 10px;
+}
+
+.events-section{
+    padding-bottom: 120px;
+    padding-top: 40px;
+}
+
+section{
+    display: block;
+    align-items: center;
+    margin-left: 200px;
+}
+
+h1{
+    font-size: xx-large;
+}
